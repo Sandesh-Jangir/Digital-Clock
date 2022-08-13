@@ -4,6 +4,8 @@ from time import strftime
 root = Tk()
 root.title('Digital Clock')
 root.config(bg='black')
+icon = PhotoImage(file="icon.png")
+root.iconphoto(False, icon)
 
 def update_time():
     main_text.config(text=(strftime('%H:%M:%S %p')))
